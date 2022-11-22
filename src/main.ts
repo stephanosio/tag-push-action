@@ -28,7 +28,7 @@ async function run(): Promise<void> {
       `${dockerConfigPath}:/root/.docker/config.json`,
       '--network',
       'host',
-      'akhilerm/repo-copy:latest',
+      'ghcr.io/stephanosio/repo-copy:latest',
       source,
       ...destination
     ])
